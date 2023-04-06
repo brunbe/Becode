@@ -1,0 +1,38 @@
+Dear selection team,
+
+This is me. //point to picture of me
+I would very much like to enroll in your course to become a jr web dev.
+You can hover my picture for some pesonale details. // put interative el in neon box.
+
+And with this website I hope to hijack your attention,
+like I hijacked your scroll bar. // make this scroll horizontally across the screen.
+
+// section one
+//in background layer.
+As you can see, I'm not entirely starting from scratch. I've done quite some self-study.
+// show cards with courses I took. make modal with content for every card of drop down menu.
+
+//on front layer
+But, IMHO, there is nothing better than learning with and from other people.
+
+// section two
+//in background layer
+I've spent most of my time on the front end fundamentals. // add Yoda meme
+But I am also very interested in the back-end // sir-mix-alot on hover back-end
+//in the front layer
+The course I have lined-up: // show cards of course lined-up.
+
+//footer section
+// make a call to action so they call you and maybe insert a picture of kitten or puppy.
+
+
+// put picture in midjourney and ask for cartoon of myself
+// on the back side of photo
+about me:
+father of 2
+husband of 1
+master of none
+
+wants to build things and befriend technology.
+
+doesn't want to do administration.

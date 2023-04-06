@@ -1,0 +1,17 @@
+@use "../abstracts/index" as a;
+
+.card-box {
+  display: flex;
+  justify-content: space-around;
+  opacity: 1;
+  transition: all 1s ease;
+  & > .card {
+    width: 25%;
+    position: relative;
+  }
+}
+
+.card-box__hidden {
+  transform: translateY(10vh);
+  opacity: 0;
+}

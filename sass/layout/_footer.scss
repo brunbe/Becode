@@ -1,0 +1,26 @@
+@use "../abstracts/" as a;
+
+.parallax-group {
+  &__outro-screen {
+    padding: 20vmin;
+    overflow: hidden;
+    &--flex-container {
+      @include a.flex-column;
+      gap: 2vw;
+      flex-wrap: wrap;
+    }
+
+    &--title {
+      grid-row: 1;
+      grid-column: span 3;
+    }
+    &--body {
+      grid-row: 2;
+      font-size: 1.5vw;
+    }
+    &--contact {
+      grid-row: 3;
+      grid-column: span 3;
+    }
+  }
+}

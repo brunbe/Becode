@@ -1,0 +1,18 @@
+.hidden {
+  display: none;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.appear_opacity-zero {
+  opacity: 0;
+}
+
+.appear_from-left {
+  transform: translateX(-10vh);
+}
+.appear_from-right {
+  transform: translateX(10vh);
+}

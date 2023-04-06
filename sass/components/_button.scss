@@ -1,0 +1,16 @@
+@use "../abstracts/index" as a;
+
+.button {
+  border: 2px solid a.$oc-yellow-6;
+  padding: 5vmin;
+  border-radius: 50px;
+  transition: all 0.4s ease;
+
+  &:hover {
+    transform: translateY(-1vh) translateX(0vh);
+  }
+  &:active {
+    transform: translateY(0vh) translateX(0vh);
+    background-color: rgba(a.$oc-gray-4, 0.3);
+  }
+}

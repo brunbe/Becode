@@ -1,0 +1,36 @@
+@use "../abstracts/" as a;
+
+body {
+  font-family: "Raleway", sans-serif;
+  color: a.$oc-gray-0;
+  font-weight: a.$font-regular;
+}
+
+h1 {
+  font-size: 6vw;
+  font-weight: a.$font-black;
+}
+
+h2 {
+  font-size: 2vw;
+}
+
+h3 {
+  font-size: 2vw;
+  color: a.$oc-grape-6;
+}
+
+p {
+  font-size: 3vh;
+  .not-me {
+    font-weight: a.$font-very-thin;
+    font-size: 2.5vh;
+    vertical-align: text-top;
+  }
+}
+
+li {
+  font-size: 2vmin;
+  font-weight: a.$font-regular;
+  margin-bottom: 0.5vh;
+}

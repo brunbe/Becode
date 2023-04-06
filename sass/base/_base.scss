@@ -1,0 +1,32 @@
+/*GLOBAL RESET*/
+html {
+  //this defines what 1 rem should be
+  font-size: 62.5%;
+  overflow: hidden;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 1%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+ul {
+  list-style: none;
+}

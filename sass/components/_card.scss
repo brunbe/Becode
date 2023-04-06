@@ -1,0 +1,59 @@
+@use "../abstracts/index" as a;
+
+.card {
+  position: relative;
+  border: 2px solid a.$oc-cyan-5;
+  padding: 1vh;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  overflow: hidden;
+  // perspective: 300rem;
+  // transform-style: preserve-3d;
+  // transition: all 0.5s ease;
+
+  &__side-1 {
+    grid-row: 1;
+    grid-column: 1;
+    object-fit: cover;
+
+    // height: 50%;
+    // backface-visibility: hidden;
+    // transform: rotateY(0deg);
+    // transition: all 0.5s ease;
+  }
+  &--picture {
+    object-fit: cover;
+  }
+  &__side-2 {
+    border: 2px solid a.$oc-cyan-3;
+    background-image: linear-gradient(
+      to right bottom,
+      a.$oc-cyan-1,
+      a.$oc-cyan-4,
+      a.$oc-cyan-6
+    );
+    // backface-visibility: hidden;
+    grid-column: 1;
+    grid-row: 1;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    // transform: rotateY(-180deg);
+    transform: translateY(-110%);
+    transition: all 0.5s ease;
+    padding: 1vh;
+    @include a.flex-column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  // &:hover > &__side-1 {
+  //   transform: rotateY(180deg);
+  // }
+  // &:link,
+  // &:visited > &__side-2 {
+  // }
+  &:hover > &__side-2 {
+    transform: translateY(0);
+  }
+}

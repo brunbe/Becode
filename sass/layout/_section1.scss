@@ -1,0 +1,30 @@
+@use "../abstracts/" as a;
+
+.parallax-group__1 {
+  text-align: center;
+  &--layer-base {
+    @include a.flex-column;
+    justify-content: space-around;
+    & > .text-box {
+      text-align: center;
+      & > h2 {
+        font-size: 4vh;
+        margin-bottom: 4vh;
+      }
+    }
+    &-title {
+      font-size: 7vmin;
+      color: a.$oc-gray-1;
+      font-style: italic;
+      font-weight: 100;
+      background-color: rgba(a.$oc-grape-6, 0.9);
+      padding: 1vmin;
+    }
+  }
+  &--layer-middle {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "pleasepickme",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+  
+    "preview": "vite preview",
+    "compile:sass": "sass sass/main.scss style.css -w"
+  },
+  "devDependencies": {
+    "gh-pages": "^5.0.0",
+    "open-color": "^1.9.1",
+    "sass": "^1.60.0",
+    "vite": "^4.2.0"
+  }
+}

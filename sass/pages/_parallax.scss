@@ -1,0 +1,51 @@
+@use "../abstracts/" as a;
+
+.parallax-wrapper {
+  height: 100vh;
+  overflow-x: hidden;
+  perspective: 300px;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  .parallax-group {
+    position: relative;
+    height: 100vh;
+    transform-style: preserve-3d;
+
+    &__intro-screen {
+      height: 100vh;
+      background-color: a.$oc-red-8;
+      z-index: 0;
+    }
+    &__outro-screen {
+      height: 100vh;
+      background-color: a.$oc-cyan-9;
+    }
+    &__1 {
+      z-index: -1;
+      &--layer-base {
+        background-color: a.$oc-red-4;
+        //scale-calculation = 1 + ((z-transform-value * -1)/perspective);
+        transform: translateZ(-300px) scale(2);
+        z-index: 0;
+      }
+      &--layer-middle {
+        transform: translateZ(0) scale(0.8);
+      }
+    }
+    &__2 {
+      &--layer-middle {
+        transform: translateZ(0);
+      }
+      &--layer-top {
+        transform: translateZ(210px) scale(0.3);
+      }
+    }
+  }
+
+  .parallax-layer {
+    position: absolute;
+    inset: 0;
+  }
+}
