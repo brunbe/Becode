@@ -2,8 +2,8 @@
 
 .parallax-group {
   &__outro-screen {
-    padding: 20vmin;
-    overflow: hidden;
+    padding: 10vmin;
+    overflow: visible;
     &--flex-container {
       @include a.flex-column;
       gap: 2vw;
@@ -13,10 +13,11 @@
     &--title {
       grid-row: 1;
       grid-column: span 3;
+      font-size: 3rem;
     }
     &--body {
       grid-row: 2;
-      font-size: 1.5vw;
+      font-size: 1.6rem;
     }
     &--contact {
       grid-row: 3;

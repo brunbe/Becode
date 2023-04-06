@@ -14,12 +14,12 @@
     transform-style: preserve-3d;
 
     &__intro-screen {
-      height: 100vh;
+      min-height: 100vh;
       background-color: a.$oc-red-8;
       z-index: 0;
     }
     &__outro-screen {
-      height: 100vh;
+      min-height: 100vh;
       background-color: a.$oc-cyan-9;
     }
     &__1 {

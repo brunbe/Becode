@@ -1,24 +1,28 @@
 @use "../abstracts/" as a;
 
 .parallax-group__2 {
-  p,
-  h3 {
-    margin-bottom: 4vw;
-    text-align: center;
-  }
-
-  h3 {
-    font-size: 6vh;
-    font-weight: a.$font-very-thin;
-    text-align: center;
-  }
-
   &--layer-middle {
     background-color: a.$oc-green-4;
     @include a.flex-column;
     justify-content: space-around;
     align-items: center;
     padding: 2vw;
+
+    &-h2,
+    &-h3 {
+      margin-bottom: 3vh;
+      text-align: center;
+    }
+
+    &-h2 {
+      font-size: 3vh;
+    }
+
+    &-h3 {
+      font-size: 6vh;
+      font-weight: a.$font-very-thin;
+    }
+
     .highlight {
       transition: all 6s ease;
       &-1 {
@@ -44,6 +48,7 @@
     p {
       color: a.$oc-green-7;
       font-weight: a.$font-black;
+      text-align: center;
     }
     h3 {
       font-size: 6vh;
