@@ -247,8 +247,7 @@ li {
 .parallax-group__outro-screen--flex-container {
   display: flex;
   flex-direction: column;
-  gap: 2vw;
-  flex-wrap: wrap;
+  max-width: 500px;
 }
 .parallax-group__outro-screen--title {
   grid-row: 1;
