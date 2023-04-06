@@ -6,8 +6,7 @@
     overflow: visible;
     &--flex-container {
       @include a.flex-column;
-      gap: 2vw;
-      flex-wrap: wrap;
+      max-width: 500px;
     }
 
     &--title {
